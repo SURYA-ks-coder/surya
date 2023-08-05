@@ -14,7 +14,7 @@ import Navbar from "@layout/Header/Navbar";
 import Layout from "@layout/Layout";
 import React from "react";
 
-const Conference = () => {
+const Index = () => {
   return (
     <Layout>
       <Navbar classOption="position-absolute" />
@@ -34,4 +34,4 @@ const Conference = () => {
   );
 };
 
-export default Conference;
+export default Index;
