@@ -29,15 +29,28 @@ export default function Showcase() {
       ],
     },
     {
-      img: image2,
-      title: "Backend Developement",
+      img: image1,
+      title: "Web Developement",
       discription:
-        "I code Node.js and sockets to seamlessly integrate front-end elements with databases.",
+        "I utilize Next.js to develop websites and web applications, which can then be seamlessly deployed on Vercel.",
       icons: [
-        <IoLogoNodejs />,
-        <SiSocketdotio />,
-        <SiRedis />,
-        // <SiVercel />,
+        <SiNextdotjs />,
+        <FaReact />,
+        <SiTailwindcss />,
+        <SiVercel />,
+        <SiVisualstudiocode />,
+      ],
+    },
+    {
+      img: image1,
+      title: "Web Developement",
+      discription:
+        "I utilize Next.js to develop websites and web applications, which can then be seamlessly deployed on Vercel.",
+      icons: [
+        <SiNextdotjs />,
+        <FaReact />,
+        <SiTailwindcss />,
+        <SiVercel />,
         <SiVisualstudiocode />,
       ],
     },
@@ -51,13 +64,14 @@ export default function Showcase() {
             key={i}
             className=" shadow-2xl mx-2   rounded-xl bg-zinc-800 w-96 xl:my-0 my-1 "
           >
-            <Image
-              src={each.img}
-              alt=""
-              height={250}
-              className="rounded-t-xl"
-            />
-
+            <div className=" relative">
+              <Image
+                src={each.img}
+                alt=""
+                height={250}
+                className="rounded-t-xl"
+              />
+            </div>
             <div className="p-5 px-6">
               <div className="text-start">
                 {/* <span className="py-4 text-5xl text-blue-500">{each.logo}</span> */}

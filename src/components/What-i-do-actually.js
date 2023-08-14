@@ -51,7 +51,7 @@ export default function WhatIDoActually() {
     },
   ];
   return (
-    <div className=" text-center px-20 z-0">
+    <div className=" text-center px-20 z-0 mb-40">
       <h1 className="text-3xl font-bold my-20">What I Do Actually</h1>
       <div className="flex justify-between mt-28 ">
         {Lists.map((each, i) => (
