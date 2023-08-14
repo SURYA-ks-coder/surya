@@ -1,0 +1,13 @@
+# Log files
+*.log
+/node_modules
+error_log
+
+wp-content/cache/
+wp-content/backup-db/
+wp-content/backups/
+backup/
+.tmb/
+.well-known/
+/.next
+/out

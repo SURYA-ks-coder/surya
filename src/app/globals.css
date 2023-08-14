@@ -11,8 +11,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb:5, 12, 20;
+    --background-end-rgb: 5, 12, 20;
   }
 }
 
@@ -24,4 +24,28 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.customer-logos-grid img,
+.customer-logo {
+  color:#243d57 ;
+  transition: all 0.3s ease-in-out;
+}
+.customer-logo-gray {
+  filter: opacity(0.6);
+}
+.customer-logo {
+  filter: brightness(1) invert(1);
+}
+.customer-logo:hover {
+  filter: brightness(0) invert(1);
+}
+.customer-logo-gray:hover {
+  filter: none;
+}
+.bg-black{
+  background: rgb(5, 12, 20);
+}
+.border{
+  border: white;
 }
