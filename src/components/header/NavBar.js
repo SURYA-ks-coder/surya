@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { ImLinkedin } from "react-icons/im";
 import { FaSquareInstagram } from "react-icons/fa6";
@@ -18,26 +19,46 @@ const NavBar = () => {
             className="rounded-full md:w-50 w-10 h-10"
           />
           <div className=" py-auto px-3 items-center">
-            <h1 className="mb-0 md:text-xl text-[10px] uppercase tracking-tighter font-bold">
+            <h1 className="mb-0 md:text-xl text-[15px] uppercase tracking-tighter font-bold">
               Surya Developer
             </h1>
-            <p className="mt-0 md:text-sm text-[8px] uppercase tracking-tighter font-bold">
+            <p className="mt-0 md:text-sm text-[10px] uppercase tracking-tighter font-bold">
               1+ years in Tech
             </p>
           </div>
         </div>
         <div className="md:grid grid-cols-4 md:gap-4 gap-1 items-center hidden ">
           <div className=" md:text-2xl text-sm text-center ">
-            <ImLinkedin className="" />
+            <ImLinkedin
+              className=" hover:text-[#035efcc2] cursor-pointer"
+              onClick={() => {
+                window.open("https://www.linkedin.com/in/suryaksdeveloper");
+              }}
+            />
           </div>
           <div className="  md:text-3xl text-md text-center">
-            <FaSquareInstagram />
+            <FaSquareInstagram
+              className=" hover:text-[#035efcc2] cursor-pointer"
+              onClick={() => {
+                window.open("https://instagram.com/s_u_r_y_a_403");
+              }}
+            />
           </div>
           <div className="  md:text-3xl text-md text-center">
-            <BsGithub />
+            <BsGithub
+              className=" hover:text-[#035efcc2] cursor-pointer"
+              onClick={() => {
+                window.open("https://github.com/SURYA-ks-coder");
+              }}
+            />
           </div>
           <div className="  md:text-3xl text-md text-center">
-            <IoLogoWhatsapp />
+            <IoLogoWhatsapp
+              className=" hover:text-[#035efcc2] cursor-pointer "
+              onClick={() => {
+                window.open("https://wa.me/+919600449653");
+              }}
+            />
           </div>
         </div>
         <div className="md:flex items-center justify-center hidden">
