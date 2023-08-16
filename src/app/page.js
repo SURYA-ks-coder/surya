@@ -1,43 +1,62 @@
 import Image from "next/image";
 import berarkrays from "../assets/logo-modified.png";
 import srishit from "../assets/logo_Srishit-modified.png";
-import NavBar from "@/header/NavBar";
 import WhatIDoActually from "@/components/What-i-do-actually";
 import Showcase from "@/components/Showcase";
 import Talk from "@/components/Talk";
 import img from "../assets/surya.jpg";
 import { MdOutlineWork } from "react-icons/md";
+import NavBar from "@/components/header/NavBar";
+import { ImLinkedin } from "react-icons/im";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { BsGithub } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io5";
 export default function Home() {
   return (
     <section className="">
       <NavBar />
-      <div className="h-screen w-full items-center">
-        <div className="flex justify-center items-center pt-32">
-          <div className="w-">
-            <h1 className="text-6xl text-blue-500 font-bold uppercase">
-              Surya_K_S Coder
+
+      <div className="grid grid-cols-4 md:gap-4 gap-1 items-center justify-center md:hidden bg-white rounded-full fixed bottom-2 left-0 right-0 z-50 p-2 mx-10">
+        <div className="text-xl text-black  text-center flex justify-center ">
+          <ImLinkedin className="" />
+        </div>
+        <div className="  text-2xl text-black flex justify-center">
+          <FaSquareInstagram />
+        </div>
+        <div className="  text-2xl text-black flex justify-center">
+          <BsGithub />
+        </div>
+        <div className="  text-2xl text-black flex justify-center">
+          <IoLogoWhatsapp />
+        </div>
+      </div>
+      <div className="h-full w-full items-center xl:px-0 px-10 ">
+        <div className="md:flex justify-center items-center pt-32">
+          <div className="text-center order-2">
+            <h1 className="md:text-6xl text-4xl text-blue-500 font-bold uppercase">
+              Surya Developer
             </h1>
-            <p className=" text-sm py-4 uppercase ">
+            <p className=" md:text-sm text-xs py-4 uppercase ">
               Building quality
-              <span className="text-2xl px-2  font-bold uppercase tracking-tighter">
+              <span className="md:text-2xl text-lg px-2  font-bold uppercase tracking-tighter">
                 websites
               </span>
               and
-              <span className="text-2xl px-2 font-bold uppercase tracking-tighter">
+              <span className="md:text-2xl text-lg px-2 font-bold uppercase tracking-tighter">
                 web application
               </span>
             </p>
-            <div className="flex items-center">
+            <div className="flex items-center md:text-xl text-sm">
               <MdOutlineWork className="mr-2 text-xl text-blue-700" />
               Software Engineer at berarkrays.
             </div>
           </div>
-          <div className="flex items-center border px-[26px]">
+          <div className="flex justify-center items-center border px-[26px] md:pt-0 pt-10">
             <Image
               src={img}
               alt="profile"
               width={280}
-              className=" rounded-full"
+              className=" rounded-full order-1"
             />
           </div>
         </div>

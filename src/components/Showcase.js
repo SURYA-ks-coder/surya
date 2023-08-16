@@ -56,13 +56,13 @@ export default function Showcase() {
     },
   ];
   return (
-    <div className=" container-sm text-center px-20 mt-10">
+    <div className=" container-sm text-center md:px-20 mt-10">
       <h1 className="text-3xl font-bold">Showcase</h1>
-      <div className=" lg:flex justify-between mt-28 ">
+      <div className=" xl:flex justify-between mt-28 ">
         {Lists.map((each, i) => (
           <div
             key={i}
-            className=" shadow-2xl mx-2   rounded-xl bg-zinc-800 w-96 xl:my-0 my-1 "
+            className="md:mx-auto shadow-2xl mx-2   rounded-xl bg-zinc-800 md:w-96 xl:my-0 my-5 "
           >
             <div className=" relative">
               <Image

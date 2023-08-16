@@ -51,13 +51,13 @@ export default function WhatIDoActually() {
     },
   ];
   return (
-    <div className=" text-center px-20 z-0 mb-40">
+    <div className=" text-center md:px-20  z-0 mb-40 ">
       <h1 className="text-3xl font-bold my-20">What I Do Actually</h1>
-      <div className="flex justify-between mt-28 ">
+      <div className=" xl:flex justify-between mt-28 mx-auto ">
         {Lists.map((each, i) => (
           <div
             key={i}
-            className=" shadow-2xl mx-2 p-5 px-6 rounded-xl bg-zinc-800 w-96  "
+            className="md:mx-auto shadow-2xl mx-2 my-5 p-5 px-6 rounded-xl bg-zinc-800 md:w-96  "
           >
             <div className="text-start pb-5">
               <span className="py-4 text-8xl text-blue-500">{each.logo}</span>
