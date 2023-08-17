@@ -1,7 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import image1 from "../assets/Screenshot 2023-08-14 at 10.04.18 AM.png";
-import image2 from "../assets/Screenshot 2023-08-14 at 10.06.29 AM.png";
+import webSite from "../assets/webSite.png";
+import webBooking from "../assets/webBooking.png";
+import tripCharts from "../assets/graph.png";
+import journeyCatalog from "../assets/list.png";
+import ZervxLogo from "../assets/zervx.png";
 import {
   SiGoogleanalytics,
   SiMoleculer,
@@ -20,7 +23,7 @@ import { IoLogoFirebase, IoLogoGoogle, IoLogoNodejs } from "react-icons/io5";
 export default function Showcase() {
   const Lists = [
     {
-      img: image1,
+      img: webSite,
       title: "zervx.com Website",
       discription:
         "Created a Website for Zervx App dev Company including pricing, contact us, features, and everything.",
@@ -34,9 +37,10 @@ export default function Showcase() {
         <TbBrandRedux />,
         <FaDigitalOcean />,
       ],
+      logo: ZervxLogo,
     },
     {
-      img: image1,
+      img: webBooking,
       title: "User WebApp",
       discription:
         "A Created ride-hailing user web app with the user's Quick Booking, Real-Time Tracking, Transparent Pricing, Scheduled Rides, Trip History, Notifications.",
@@ -48,9 +52,10 @@ export default function Showcase() {
         <SiSocketdotio />,
         <FaDigitalOcean />,
       ],
+      logo: ZervxLogo,
     },
     {
-      img: image1,
+      img: tripCharts,
       title: "Trip Charts",
       discription:
         "Written backend code for the trip graph on location-based Admin rides, user rides, driver rides, corporate rides, income, and expenses.",
@@ -62,9 +67,10 @@ export default function Showcase() {
         <SiMongodb />,
         <FaDigitalOcean />,
       ],
+      logo: ZervxLogo,
     },
     {
-      img: image1,
+      img: journeyCatalog,
       title: "Journey Catalog",
       discription:
         "Written backend code for the journey catalog on location and date-based Admin rides, user rides, driver rides, corporate user rides, and corporate officer rides.",
@@ -75,6 +81,7 @@ export default function Showcase() {
         <SiMongodb />,
         <FaDigitalOcean />,
       ],
+      logo: ZervxLogo,
     },
   ];
   return (
@@ -84,8 +91,16 @@ export default function Showcase() {
         {Lists.map((each, i) => (
           <div
             key={i}
-            className="md:mx-auto shadow-2xl mx-2   rounded-xl bg-zinc-800 md:w-96 my-5 "
+            className="md:mx-auto shadow-2xl mx-2   rounded-xl bg-zinc-800 md:w-96 my-5 relative"
           >
+            <div className="absolute top-0 right-0 z-50 ">
+              <Image
+                src={each.logo}
+                alt=""
+                width={50}
+                className="bg-gray-600 rounded-tr-xl rounded-bl-xl text-white"
+              />
+            </div>
             <div className=" relative">
               <Image
                 src={each.img}
