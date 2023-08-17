@@ -38,6 +38,7 @@ export default function Showcase() {
         <FaDigitalOcean />,
       ],
       logo: ZervxLogo,
+      url: "https://www.zervx.com/",
     },
     {
       img: webBooking,
@@ -53,6 +54,7 @@ export default function Showcase() {
         <FaDigitalOcean />,
       ],
       logo: ZervxLogo,
+      url: "https://booking.zervx.com/",
     },
     {
       img: tripCharts,
@@ -68,6 +70,7 @@ export default function Showcase() {
         <FaDigitalOcean />,
       ],
       logo: ZervxLogo,
+      url: "",
     },
     {
       img: journeyCatalog,
@@ -82,6 +85,7 @@ export default function Showcase() {
         <FaDigitalOcean />,
       ],
       logo: ZervxLogo,
+      url: "",
     },
   ];
   return (
@@ -91,14 +95,20 @@ export default function Showcase() {
         {Lists.map((each, i) => (
           <div
             key={i}
-            className="md:mx-auto shadow-2xl mx-2   rounded-xl bg-zinc-800 md:w-96 my-5 relative"
+            className={`md:mx-auto shadow-2xl mx-2   rounded-xl bg-zinc-800 md:w-96 my-5 relative ${
+              each.url ? "cursor-pointer" : " cursor-default"
+            }`}
+            onClick={() => {
+              each.url ? window.open(each.url) : null;
+            }}
           >
-            <div className="absolute top-0 right-0 z-50 ">
+            <div className="absolute top-0 right-0 z-50 rounded-bl-xl">
               <Image
                 src={each.logo}
                 alt=""
-                width={50}
-                className="bg-gray-600 rounded-tr-xl rounded-bl-xl text-white"
+                // width={50}
+                height={40}
+                className="bg-gray-800 rounded-tr-xl rounded-bl-xl text-white "
               />
             </div>
             <div className=" relative">

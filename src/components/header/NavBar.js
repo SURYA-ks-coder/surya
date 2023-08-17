@@ -6,7 +6,17 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 import { BsGithub } from "react-icons/bs";
 import img from "../../assets/surya.jpg";
 import Image from "next/image";
+import { scroller } from "react-scroll";
+
 const NavBar = () => {
+  const handleScrollToComponent = (hrefdata) => {
+    scroller.scrollTo(hrefdata, {
+      duration: 100,
+      delay: 4,
+      smooth: "easeInOutQuart",
+    });
+  };
+
   return (
     <div className=" sticky top-0 bg-black z-50">
       <div className=" flex md:justify-evenly justify-start py-5 md:px-0 px-10">
@@ -65,6 +75,9 @@ const NavBar = () => {
           <button
             className=" md:px-5 px-3 py-1 text-sm font-bold rounded-xl border-none bg-white text-black"
             role="buttton"
+            onClick={() => {
+              handleScrollToComponent("#LetTalk");
+            }}
           >
             Let's Talk
           </button>
