@@ -7,6 +7,8 @@ import { BsGithub } from "react-icons/bs";
 import img from "../../assets/surya.jpg";
 import Image from "next/image";
 import { scroller } from "react-scroll";
+// import resume from "../../assets/pdf/SURYA K S.pdf";
+// import resume from "../../assets/pdfs/SURYA_K_S.pdf";
 
 const NavBar = () => {
   const handleScrollToComponent = (hrefdata) => {
@@ -72,15 +74,18 @@ const NavBar = () => {
           </div>
         </div>
         <div className="md:flex items-center justify-center hidden">
-          <button
+          <a
             className=" md:px-5 px-3 py-1 text-sm font-bold rounded-xl border-none bg-white text-black"
             role="buttton"
-            onClick={() => {
-              handleScrollToComponent("#LetTalk");
-            }}
+            // onClick={() => {
+            //   handleScrollToComponent("#LetTalk");
+            // }}
+            // href={resume}
+            href={"#LetTalk"}
+            // download={"SURYA K S"}
           >
             Let's Talk
-          </button>
+          </a>
         </div>
       </div>
     </div>

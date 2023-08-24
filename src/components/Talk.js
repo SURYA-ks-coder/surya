@@ -34,7 +34,7 @@ export default function Talk() {
     );
   };
   return (
-    <div className=" md:px-20 px-10 text-center my-20 ">
+    <div className=" md:px-20 px-10 text-center my-20 " id="LetTalk">
       <h1 className=" text-3xl font-bold my-20">Let's Talk</h1>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-2  text-center mtb-10">
         <div className=" grid grid-rows-3 gap-2 px-5 items-center justify-center ">
