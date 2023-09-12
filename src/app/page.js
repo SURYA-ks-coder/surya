@@ -66,10 +66,10 @@ export default function Home() {
                 web application
               </span>
             </p>
-            <div className="flex items-center md:text-xl text-sm">
+            {/* <div className="flex items-center md:text-xl text-sm">
               <MdOutlineWork className="mr-2 text-xl text-blue-700" />
               Junior Software Engineer at BerarkRays.
-            </div>
+            </div> */}
           </div>
           <div className="flex justify-center items-center border px-[26px] md:pt-0 pt-10 md:order-2 order-1">
             <Image
