@@ -68,7 +68,7 @@ export default function Home() {
             </p>
             <div className="flex items-center md:text-xl text-sm">
               <MdOutlineWork className="mr-2 text-xl text-blue-700" />
-              Software Engineer at berarkrays.
+              Junior Software Engineer at BerarkRays.
             </div>
           </div>
           <div className="flex justify-center items-center border px-[26px] md:pt-0 pt-10 md:order-2 order-1">
@@ -90,7 +90,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="flex justify-center  pt-20 -z-0">
+        {/* <div className="flex justify-center  pt-20 -z-0">
           <div className=" flex px-4  ">
             <Image
               // src={company.img.src}
@@ -115,14 +115,14 @@ export default function Home() {
               // loading="lazy"
             />
           </div>
-        </div>
+        </div> */}
       </div>
       <div className=" relative">
         <WhatIDoActually />
       </div>
-      <section>
+      {/* <section>
         <Showcase />
-      </section>
+      </section> */}
       <section>
         <Talk />
       </section>
