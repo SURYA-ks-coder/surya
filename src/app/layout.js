@@ -34,12 +34,12 @@ export default function RootLayout({ children }) {
   }, []);
   return (
     <html lang="en">
-      {/* <!-- Google tag (gtag.js) --> */}
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-JLC1CY7L2K"
-      ></script>
       <head>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-JLC1CY7L2K"
+        ></script>
         {/* <Head> */}
         <title>Surya K S | Full Stack Developer</title>
 
