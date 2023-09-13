@@ -2,7 +2,7 @@ import React from "react";
 import { FaReact } from "react-icons/fa6";
 import { IoLogoNodejs } from "react-icons/io5";
 import { MdOutlineWeb } from "react-icons/md";
-import { BiCodeBlock } from "react-icons/bi";
+import { BiCodeBlock, BiLogoFirebase } from "react-icons/bi";
 import { AiOutlineDatabase } from "react-icons/ai";
 
 import {
@@ -47,7 +47,7 @@ export default function WhatIDoActually() {
       title: "Database Management",
       discription:
         "I establish and oversee databases, handling queries and related tasks.",
-      icons: [<SiMongodb />],
+      icons: [<SiMongodb />, <BiLogoFirebase />],
     },
   ];
   return (

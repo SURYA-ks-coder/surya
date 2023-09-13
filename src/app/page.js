@@ -14,13 +14,13 @@ import { BsGithub } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io5";
 export default function Home() {
   return (
-    <section className="">
+    <section className=" ">
       <NavBar />
 
       <div className="grid grid-cols-4 md:gap-4 gap-1 items-center justify-center md:hidden bg-white rounded-full fixed bottom-2 left-0 right-0 z-50 p-2 mx-10">
         <div className="text-xl text-black  text-center flex justify-center ">
           <ImLinkedin
-            className=" hover:text-[#035efcc2] cursor-pointer"
+            className=" hover:text-[#dee0e2c2] cursor-pointer"
             onClick={() => {
               window.open("https://www.linkedin.com/in/suryaksdeveloper");
             }}
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
         <div className="  text-2xl text-black flex justify-center">
           <FaSquareInstagram
-            className=" hover:text-[#035efcc2] cursor-pointer"
+            className=" hover:text-[#dee0e2c2] cursor-pointer"
             onClick={() => {
               window.open("https://instagram.com/s_u_r_y_a_403");
             }}
@@ -36,6 +36,7 @@ export default function Home() {
         </div>
         <div className="  text-2xl text-black flex justify-center">
           <BsGithub
+            className=" hover:text-[#dee0e2c2] cursor-pointer "
             onClick={() => {
               window.open("https://github.com/SURYA-ks-coder");
             }}
@@ -43,7 +44,7 @@ export default function Home() {
         </div>
         <div className="  text-2xl text-black flex justify-center">
           <IoLogoWhatsapp
-            className=" hover:text-[#035efcc2] cursor-pointer "
+            className=" hover:text-[#dee0e2c2] cursor-pointer "
             onClick={() => {
               window.open("https://wa.me/+919600449653");
             }}
