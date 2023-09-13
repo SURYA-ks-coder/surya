@@ -2,7 +2,6 @@ import Head from "next/head";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import img from "../assets/surya.jpg";
-import { useEffect } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata = {
@@ -11,35 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 // };
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    (function (c, l, a, r, i, t, y) {
-      c[a] =
-        c[a] ||
-        function () {
-          (c[a].q = c[a].q || []).push(arguments);
-        };
-      t = l.createElement(r);
-      t.async = 1;
-      t.src = "https://www.clarity.ms/tag/" + i;
-      y = l.getElementsByTagName(r)[0];
-      y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "iuelfv48x8");
-    // >>>>>>>>>>>>>>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-JLC1CY7L2K");
-  }, []);
   return (
     <html lang="en">
       <head>
-        {/* <!-- Google tag (gtag.js) --> */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-JLC1CY7L2K"
-        ></script>
         {/* <Head> */}
         <title>Surya K S | Full Stack Developer</title>
 
