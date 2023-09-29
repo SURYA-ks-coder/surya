@@ -16,7 +16,7 @@ export default function Talk() {
   // }, [sendEmails]);
 
   const sendEmail = () => {
-    alert(JSON.stringify(sendEmails));
+    // alert(JSON.stringify(sendEmails));
     EmailJSResponseStatus.send(
       "suryaKS",
       "template_nu5zrvh",
@@ -50,6 +50,7 @@ export default function Talk() {
               });
             }}
             value={sendEmails.name}
+            // require={true}
           />
           <input
             type="email"
@@ -59,6 +60,7 @@ export default function Talk() {
               setSendEmails({ ...sendEmails, email: e.target.value });
             }}
             value={sendEmails.email}
+            // require={true}
           />
           <textarea
             name=""
@@ -74,10 +76,10 @@ export default function Talk() {
               });
             }}
             value={sendEmails.message}
+            // require={true}
           ></textarea>
           {emailSendSucess === true && (
             <p className="text-green-400 font-extrabold">
-              {" "}
               Mail has been send...
             </p>
           )}
