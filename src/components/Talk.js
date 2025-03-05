@@ -34,8 +34,11 @@ export default function Talk() {
     );
   };
   return (
-    <div className=" md:px-20 px-10 text-center my-20 " id="LetTalk">
-      <h1 className=" text-3xl font-bold my-20">Let's Talk</h1>
+    <div
+      className=" md:px-20 px-10 text-center lg:py-20 bg-black "
+      id="LetTalk"
+    >
+      <h1 className=" text-3xl font-bold py-20 text-white">Let's Talk</h1>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-2  text-center mtb-10">
         <div className=" grid grid-rows-3 gap-2 px-5 items-center justify-center ">
           {/* <form action="" className="block w-full"> */}
@@ -85,7 +88,7 @@ export default function Talk() {
           )}
           <button className="  flex justify-center">
             <span
-              className="border-none rounded-xl bg-[#1BA40C] p-2 px-5 mt-5"
+              className="border-none rounded-xl bg-[#1BA40C] p-2 px-5 mt-5 text-white"
               onClick={sendEmail}
             >
               Submit

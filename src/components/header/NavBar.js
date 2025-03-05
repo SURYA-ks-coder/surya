@@ -30,7 +30,7 @@ const NavBar = () => {
             width={50}
             className="rounded-full md:w-50 w-10 h-10"
           />
-          <div className=" py-auto px-3 items-center">
+          <div className=" py-auto px-3 items-center text-white">
             <h1 className="mb-0 md:text-xl text-[15px] uppercase tracking-tighter font-bold">
               Surya Developer
             </h1>
@@ -40,9 +40,9 @@ const NavBar = () => {
           </div>
         </div>
         <div className="md:grid grid-cols-4 md:gap-4 gap-1 items-center hidden ">
-          <div className=" md:text-2xl text-sm text-center ">
+          <div className=" md:text-2xl text-sm text-center">
             <ImLinkedin
-              className=" hover:text-[#dee0e2c2] cursor-pointer"
+              className=" hover:text-[#dee0e2c2] cursor-pointer  text-white "
               onClick={() => {
                 window.open("https://www.linkedin.com/in/suryaksdeveloper");
               }}
@@ -50,7 +50,7 @@ const NavBar = () => {
           </div>
           <div className="  md:text-3xl text-md text-center">
             <FaSquareInstagram
-              className=" hover:text-[#dee0e2c2] cursor-pointer"
+              className=" hover:text-[#dee0e2c2] cursor-pointer  text-white "
               onClick={() => {
                 window.open("https://instagram.com/s_u_r_y_a_403");
               }}
@@ -58,7 +58,7 @@ const NavBar = () => {
           </div>
           <div className="  md:text-3xl text-md text-center">
             <BsGithub
-              className=" hover:text-[#dee0e2c2] cursor-pointer"
+              className=" hover:text-[#dee0e2c2] cursor-pointer  text-white "
               onClick={() => {
                 window.open("https://github.com/SURYA-ks-coder");
               }}
@@ -66,7 +66,7 @@ const NavBar = () => {
           </div>
           <div className="  md:text-3xl text-md text-center">
             <IoLogoWhatsapp
-              className=" hover:text-[#dee0e2c2] cursor-pointer "
+              className=" hover:text-[#dee0e2c2] cursor-pointer  text-white "
               onClick={() => {
                 window.open("https://wa.me/+919600449653");
               }}
