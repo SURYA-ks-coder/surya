@@ -35,7 +35,7 @@ const NavBar = () => {
               Surya Developer
             </h1>
             <p className="mt-0 md:text-sm text-[10px] uppercase tracking-tighter font-bold">
-              1+ years in Tech
+              3+ years in Tech
             </p>
           </div>
         </div>
