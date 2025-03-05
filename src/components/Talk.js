@@ -35,7 +35,7 @@ export default function Talk() {
   };
   return (
     <div
-      className=" md:px-20 px-10 text-center lg:py-20 bg-black "
+      className=" md:px-20 px-10 text-center lg:py-20 bg-black xl:pb-5 pb-14 "
       id="LetTalk"
     >
       <h1 className=" text-3xl font-bold py-20 text-white">Let's Talk</h1>
